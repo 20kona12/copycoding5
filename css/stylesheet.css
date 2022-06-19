@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+/*共通部分ーーーーーーーーーーーーーー*/
+
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #2b2a27;
+}
+
+.main-v img {
+  height: 100vh;
+  object-fit: cover;
+  object-position: center top;
+}
+.main-v {
+  margin-bottom: 80px;
+}
+
+/*レシピダイアリー*/
+
+#recipe-dialy {
+  text-align: center;
+  margin-bottom: 80px;
+  padding: 0 20px;
+}
+
+#recipe-dialy h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/*レシピ画像*/
+
+#recipe-img {
+  display: flex;
+  margin-bottom: 60px;
+}
+#recipe-img li {
+  width : calc(100% / 3) ;
+  list-style: none;
+}
+
+#recipe-img li img {
+  height: 500px;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+.recipe-btn {
+  text-align: center;
+  margin-bottom: 80px;
+  padding: 0 20px;
+}
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.875rem;
+  border: 1px solid black;
+  padding: 18px 60px;
+  
+}
+
+footer {
+  text-align: center;
+  font-size: 0.75rem;
+}
+.sns {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 20px;
+}
+.sns li {
+  margin: 0 10px;
+}
+
+
+/*レスポンティブ対応*/
+
+@media screen and (max-width: 834px) {
+  
+  #recipe-img {
+    flex-direction: column;
+  }
+  #recipe-img li {
+    width : 100% ;
+  }
+}
